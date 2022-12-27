@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="index.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,700;1,400&display=swap" >
+</head>
+<body>
+    <div class="button-container">
+        <button id="btn" class="createBoard">Создать доску</button>
+    </div>
+    <div class="boards-container">
+    </div>
+    <dialog id="task-creation-window">
+        <div class="task-shape" id="0">
+            <input type="text" name="name-task" id="task-name" class="name-task" placeholder="Введите название задачи" autocomplete="off" autofocus required>
+            <textarea name="task-description" id="description-task" cols="20" rows="5" placeholder="Введите описание задачи"></textarea>
+            <div class="container-for-buttons">
+                <button class="add-a-task">Добавить задачу</button>
+                <button class="cancel">Отмена</button>
+            </div>
+        </div>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
